@@ -1,0 +1,274 @@
+/* reset */
+* {
+   box-sizing: border-box;   
+   padding: 0;
+   margin: 0;
+}
+
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+
+ul, ol, li {
+   list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* body */
+body {
+   font-family: 'roboto', sans-serif;
+   background-color: aliceblue
+}
+
+
+/* header */
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1px 30px;
+   background-color: brown;
+}
+
+.buscador input {
+   padding: 4px 150px 4px 4px;
+   border-radius: 7px;
+}
+
+.buscador button {
+   padding: 4px 6px;
+   border-radius: 7px;
+}
+
+.buscador button:hover {
+   background-color: rgb(187, 187, 187);
+}
+
+nav ul {
+   display: flex;
+   gap: 25px;
+   list-style-type: none;
+   color: aliceblue;
+}
+
+header li:hover {
+   color: rgb(187, 187, 187);
+}
+
+
+/* banner */
+.banner {
+   background-image: url(../img/banner.png);
+   height: 450px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+/* main */
+main {
+   padding: 35px;
+}
+
+.seccion-productos {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   padding: 25px;
+}
+
+.producto {
+   background-color: brown;
+   width: 20%;
+   padding: 15px;
+   text-align: center;
+   border-radius: 10px;
+}
+
+.producto img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.producto h3 {
+   color: aliceblue;
+   padding: 6px;
+}
+
+.producto p {
+   color: aliceblue;
+   padding: 4px;
+}
+
+.compra {
+   color: rgb(0, 0, 0);
+   background-color: bisque;;
+   padding: 6px;
+   border-radius: 4px;
+   margin: 5px;
+   display: inline-block;
+}
+
+.compra:hover {
+   background-color: rgb(187, 187, 187); ;
+}
+
+
+/* reseñas */
+.seccion-reseñas {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+   gap: 20px; 
+   padding: 30px;
+   background-color: #f5f5f5; 
+   border-radius: 10px;
+}
+
+.reseña {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.reseña h4 {
+   font-size: 1.1rem;
+   color: brown; 
+   margin-bottom: 8px;
+}
+
+.reseña p {
+   font-size: 0.95rem;
+   color: #333;
+   margin-bottom: 10px;
+   line-height: 1.4;
+}
+
+.reseña h5 {
+   font-size: 0.85rem;
+   color: #666;
+}
+
+
+/* contacto */
+.contacto {
+   max-width: 600px;
+   margin: 30px auto;
+   padding: 15px;
+}
+
+.contacto form {
+   display: flex;
+   flex-direction:column;
+   gap: 12px;
+}
+
+.contacto label {
+   font-weight: bold;
+}
+
+.contacto input, .contacto textarea {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+.contacto button {
+   background-color: brown;
+   color: aliceblue;
+   border: none;
+   padding: 10px;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+.contacto button:hover {
+   background-color: rgb(197, 44, 44);
+}
+
+
+/* footer */
+footer {
+   color: aliceblue;
+   background-color: brown;
+   padding: 30px;
+}
+
+
+/* media queries */
+@media(max-width: 600px) {
+   header {
+      flex-direction: column;
+      text-align: center;
+   } 
+
+   .buscador, nav {
+      padding: 8px;
+   }
+
+   .buscador input {
+      padding-right: 80px;
+   }
+
+   .banner {
+      background-image: none;
+      height: 0; 
+   }
+
+   main {
+      padding: 0;
+   }
+
+  .titulo-productos {
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 5px;
+   }
+
+  .seccion-productos {
+      gap: 15px;
+   }
+
+  .producto {
+      width: 55%;
+   }
+
+ .titulo-reseñas {
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 5px;
+   }
+
+ .reseña {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 55%
+   }
+
+ .titulo-contacto {
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 5px;
+   }
+
+ .contacto {
+      flex-direction: column;
+      margin: 20px auto;
+      width: 55%
+   }
+
+ footer {
+      text-align: center;
+   }
+}
+

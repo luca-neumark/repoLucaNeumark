@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Tienda LUMARK</title>
+</head>  
+
+<body>
+    <header>
+        <img src="./img/logo.jpeg" width="300" height="100" alt="Tienda LUMARK" class="logo">
+
+        <form action="./buscar-resultadso.html" method="GET" class="buscador">
+           <input type="text" name="buscar" placeholder="Buscar..." value="" >
+           <button type="submit">Buscar</button>
+        </form> 
+
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+    
+    </section>
+  
+    <main> 
+        <h2 class="titulo-productos">Productos destacados</h2>
+        <section class="seccion-productos" id="productos">
+            <article class="producto">
+                <img src="./img/river.webp" alt="Camiseta titular River Plate 2025">
+                <h3>Camiseta titular River Plate 2025</h3>
+                <p>$119.999</p>
+                <a href="./carrito.html" class="compra">Comprar</a>
+            </article>
+             <article class="producto">
+                <img src="./img/argentina.avif" alt="Camiseta Aniversario 50 Argentina">
+                <h3>Camiseta Aniversario 50 Argentina</h3>
+                <p>$104.999</p>
+                <a href="./carrito.html" class="compra">Comprar</a>
+            </article>
+             <article class="producto">
+                <img src="./img/liverpool.avif" alt="Camiseta titular Liverpool 2025">
+                <h3>Camiseta titular Liverpool 2025</h3>
+                <p>$119.999</p>
+                <a href="./carrito.html" class="compra">Comprar</a>
+            </article>
+             <article class="producto">
+                <img src="./img/real-madrid.avif" alt="Camiseta titular Real Madrid 2025">
+                <h3>Camiseta titular Real Madrid 2025</h3>
+                <p>$119.999</p>
+                <a href="./carrito.html" class="compra">Comprar</a>
+            </article>
+        </section>
+
+        <h2 class="titulo-reseñas">Reseñas</h2>
+        <section class="seccion-reseñas" id="reseñas">
+            <div class="reseña">
+                <h4>Martín Roldán</h4>
+                <p>Excelente calidad, la tela es muy cómoda y el envío llegó antes de lo esperado.</p>
+                <h5>Fecha: 09/10/2025</h5>
+            </div>
+             <div class="reseña">
+                <h4>Sofía Álvarez</h4>
+                <p>Muy buena atención, la camiseta vino perfecta aunque el talle me quedó un poco grande.</p>
+                <h5>Fecha: 07/10/2025</h5>
+            </div>
+             <div class="reseña">
+                <h4>Lucas Benítez</h4>
+                <p>Los detalles son impecables y efectivamente es la versión original. Atención rápida y producto tal cual anuncian.</p>
+                <h5>Fecha: 28/09/2025</h5>
+            </div>
+             <div class="reseña">
+                <h4>Valentina Duarte</h4>
+                <p>Me encantó, los colores son iguales a las fotos y el envío fue rapidísimo</p>
+                <h5>Fecha: 24/09/2025</h5>
+            </div>
+        </section>
+
+        <h2 class="titulo-contacto">Contacto</h2>
+        <section class="contacto" id="contacto">
+            <form action="https://formspree.io/f/mjkalyew" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="" required>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" value="" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                </div> 
+                <div class="botones">   
+                    <button type="submit">Enviar</button>
+                    <button type="reset">borrar</button>
+                </div>    
+            </form>
+        </section>
+    </main>
+
+    <footer>   
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
+
+
+
