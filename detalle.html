@@ -24,12 +24,38 @@
     </header>
 
     <main>
+        <section class="seccion-productos">
+             <article class="producto" id="producto-card">
+                <img id="prod-img" src="" alt="">
+                <h3 id="prod-title"></h3>
+                <p id="prod-price"></p>
+                <a id="buy-btn" href="./carrito.html" class="compra">Agregar al carrito</a>
+            </article>
+        </section>
 
+        <section id="product-full">
+            <h2 id="prod-brand"></h2>
+            <h3 id="prod-name"></h3>
+            <h4 id="prod-price-big"></h4>
+
+            <h3 class="tamaño">Tamaño: <span id="prod-size">-</span></h3>
+
+            <div class="descp">
+                <h3>Descripción:</h3>
+                <p id="prod-longdesc"></p>
+            </div>
+
+            <div class="detalle-reseñas">
+                <h3>Reseñas:</h3>
+                <div class="seccion-reseñas" id="reviews"></div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 - Todos los derechos reservados</p>
     </footer>
     
+    <script src="./JS/detalle.js"></script>
 </body>
 </html>

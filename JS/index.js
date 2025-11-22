@@ -7,7 +7,7 @@ fetch("https://dummyjson.com/products")
 .then((response)=> response.json())
 
 .then((data)=> {
-    const products = data.products.slice(0, 8)
+    const products = data.products.slice(0, 10)
 
     let productosHTML = "";
     for (let i = 0; i < products.length; i++) {
@@ -19,8 +19,8 @@ fetch("https://dummyjson.com/products")
                 <img src="${prod.thumbnail}" alt="${prod.tittle}">
                 <h3>${prod.title}</h3>
                 <p>${prod.price}</p>
-                <a href="./detalle.html" class="info">Más info</a>
-                <a href="./carrito.html" class="compra">Agregar al carrito</a>
+                <a href="./detalle.html?id=${prod.id}" class="info">Más info</a>
+                <a href="./carrito.html?id=${prod.id}" class="compra">Agregar al carrito</a>
             </article>
             
             `    
@@ -62,51 +62,4 @@ reseñasContainer.innerHTML = reviewsHTML;
 })
 
 .catch((error)=> console.log(error))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-<article class="producto">
-    <img src="./img/river.webp" alt="Camiseta titular River Plate 2025">
-    <h3>Camiseta titular River Plate 2025</h3>
-    <p>$119.999</p>
-    <a href="./detalle.html" class="info">Más info</a>
-    <a href="./carrito.html" class="compra">Agregar al carrito</a>
-</article>
-
-<div class="reseña">
-    <h4>Martín Roldán</h4>
-    <p>Excelente calidad, la tela es muy cómoda y el envío llegó antes de lo esperado.</p>
-    <h5>Fecha: 09/10/2025</h5>
-</div>
-*/
-
-
 
