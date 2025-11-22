@@ -19,7 +19,7 @@ fetch("https://dummyjson.com/products")
                 <img src="${prod.thumbnail}" alt="${prod.tittle}">
                 <h3>${prod.title}</h3>
                 <p>${prod.price}</p>
-                <a href="./detalle.html?id=${prod.id}" class="info">Más info</a>
+                <a href="./detalle.html?id=${prod.id}" class="info" target="_blank">Más info</a>
                 <a href="./carrito.html?id=${prod.id}" class="compra">Agregar al carrito</a>
             </article>
             
