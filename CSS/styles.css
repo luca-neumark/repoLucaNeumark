@@ -78,6 +78,10 @@ main {
    padding: 35px;
 }
 
+.titulo-productos {
+   text-align: center;
+}
+
 .seccion-productos {
    display: flex;
    justify-content: center;
@@ -109,7 +113,7 @@ main {
    padding: 4px;
 }
 
-.compra {
+.info, .compra {
    color: rgb(0, 0, 0);
    background-color: bisque;;
    padding: 6px;
@@ -118,12 +122,17 @@ main {
    display: inline-block;
 }
 
-.compra:hover {
+.info:hover, .compra:hover {
    background-color: rgb(187, 187, 187); ;
 }
 
 
 /* reseñas */
+.titulo-reseñas {
+   text-align: center;
+   margin-top: 30px;
+}
+
 .seccion-reseñas {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
@@ -160,6 +169,11 @@ main {
 
 
 /* contacto */
+.titulo-contacto {
+   text-align: center;
+   margin-top: 30px;
+}
+
 .contacto {
    max-width: 600px;
    margin: 30px auto;
